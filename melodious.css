@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Signika:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Signika', sans-serif;
+}
+
+body {
+	background-color: green;
+	overflow: hidden;
+}
+
+nav {
+	background-color: black;
+	color: white;
+}
+
+nav img {
+	height: 5vh;
+	margin: 0.6vh 2vw;
+	width: 2vw;
+}
+
+nav h5 {
+	font-size: 1.1rem;
+	margin-top: 1.9vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.list {
+	list-style: none;
+}
+
+.container {
+	background-color: black;
+	margin: 1vh 8vw;
+	width: 84vw;
+	height: fit-content;
+	border-radius: 5vh;
+}
+
+.bottom {
+	background-color: black;
+	height: 13vh;
+	width: 100VW;
+	color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+#seek {
+	margin-left: 1vw;
+	display: flex;
+}
+
+#progressBar {
+	width: 90vw;
+	margin: 1.5vh 1vw 0vw 1vw;
+	cursor: pointer;
+}
+
+.icons i {
+	margin: 1vh 1vw;
+	color: white;
+	cursor: pointer;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.songList {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.songItem {
+	height: 50px;
+	margin: 4px 0;
+	padding: 3px;
+	width: 33vw;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.songItem img {
+	width: 43px;
+	margin: 0 23px;
+}
+
+.timestamp {
+	margin: 0 23px;
+
+}
+
+.songItem i {
+	cursor: pointer;
+	margin-left: 1.5vw;
+}
+
+.songInfo {
+	position: absolute;
+	color: white;
+	left: 15vw;
+}
+
+@media (max-width: 768px) {
+	.container {
+		position: absolute;
+		height: max-content;
+	}
+
+	nav img {
+		width: 3vw;
+	}
+
+	.songList {
+		height: 800px;
+	}
+
+	.timestamp {
+		display: flex;
+		flex-direction: row;
+		width: 40px;
+	}
+
+	.songName {
+		min-width: 70px;
+		margin-right: 20px;
+	}
+
+}
+
+@media (max-width: 540px) {
+	.container {
+		position: absolute;
+		height: max-content;
+	}
+
+	nav img {
+		width: 3vw;
+	}
+
+	.songList {
+		height: fit-content !important;
+		align-items: start !important;
+	}
+
+	.timestamp {
+		display: flex;
+		flex-direction: row;
+		width: 40px;
+	}
+
+	.songName {
+		min-width: 70px;
+		margin-right: 20px;
+	}
+
+	.songInfo {
+		word-break: break-word !important;
+		margin-top: 50px;
+		font-size: 14px;
+	}
+}
